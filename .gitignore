@@ -1,0 +1,8 @@
+
+*.log
+logs
+doc
+coverage
+node_modules
+build
+npm-debug.log
