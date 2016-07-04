@@ -1,5 +1,7 @@
 
-# Frontend example
+# chat-service frontend example
+
+[chat-service](https://github.com/an-sh/chat-service) based chat application.
 
 ![Example](https://an-sh.github.io/chat-service/example.png "Example")
 
