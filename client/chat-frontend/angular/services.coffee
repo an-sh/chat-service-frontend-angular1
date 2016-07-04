@@ -125,6 +125,7 @@ class ChatClient
     if @isInRoom roomName
       return setTimeout -> cb 'Already in room.'
     @socket.emit 'roomJoin', roomName, (error, njoined) =>
+      @messages[roomName] = []
       if error
         @_addMessage roomName
           , {textMessage : "Error joining room: #{error}" }
@@ -144,8 +145,6 @@ class ChatClient
           , { textMessage : "You are a room administrator." }
       @socket.emit 'roomRecentHistory', roomName, (error, data) =>
         if data?.length
-          unless @messages[roomName]
-            @messages[roomName] = []
           rdata = data.reverse()
           @messages[roomName].unshift rdata...
           @_refresh()
