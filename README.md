@@ -1,6 +1,9 @@
 
 # chat-service frontend example
 
+__NOTE:__ This a __legacy__ code designed mainly for demo/testing
+purposes, adapted to be compatible with chat-service 1.x.
+
 [chat-service](https://github.com/an-sh/chat-service) based chat application.
 
 ![Example](https://an-sh.github.io/chat-service/example.png "Example")
@@ -38,3 +41,7 @@ share data via a Redis server. To correctly shutdown instances use:
 ```sh
 kill -2 <PID>
 ```
+
+## License
+
+MIT
