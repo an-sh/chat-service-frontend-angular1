@@ -29,6 +29,7 @@
     "gulp-stylus": "^2.0.2",
     "jade": "^1.9.2",
     "livereload": "^0.4.0",
+    "socket.io": "^1.4.5",
     "streamqueue": "^1.1.1",
     "uglifyify": "^3.0.1",
     "vinyl-buffer": "^1.0.0",
